@@ -1,0 +1,106 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "title": "Asset Inventory",
+      "image": "https://www.pinclipart.com/picdir/middle/214-2149390_managed-inventory-solutions-inventory-icon-png-clipart.png"
+    },
+    {
+      "id": 2,
+      "title": "Model",
+      "image": "https://cdn-icons-png.flaticon.com/512/832/832380.png"
+    },
+    {
+      "id": 3,
+      "title": "Person",
+      "image": "https://icon-library.com/images/person-to-person-icon/person-to-person-icon-1.jpg"
+    }
+  ],
+  "model": [
+    {
+      "title": "Printer HS",
+      "image": "https://i.pcmag.com/imagery/reviews/0714DZNHDVTOppgJ6Vox4d3-1..1611082640.png",
+      "model": "Gt201",
+      "modelName": "Gt202",
+      "modelType": "printer type",
+      "cost": "2000",
+      "category": "printer",
+      "description": "Additional Description",
+      "notes": [
+        {
+          "name": "Mohamad Kaoury",
+          "date": "23-07-2021",
+          "comment": "test"
+        },
+        {
+          "name": "Mohamad Kaoury",
+          "date": "23-07-2021",
+          "comment": "test"
+        },
+        {
+          "name": "Mohamad Kaoury",
+          "date": "23-07-2021",
+          "comment": "test"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "LCD XS",
+      "image": "https://images.samsung.com/is/image/samsung/pk_LA40A650A1RXZN_001_Front?$624_624_PNG$",
+      "model": "bt25235",
+      "modelName": "bt2525",
+      "modelType": "samsung",
+      "cost": "2500",
+      "category": "TV",
+      "description": "Additional Description",
+      "notes": [
+        {
+          "id": 1,
+          "name": "jeniifer Smith",
+          "date": "03-02-2021",
+          "comment": "This item need to be checked"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Laptops",
+      "image": "https://www.masala.com/cloud/2021/07/27/8F6goM2X-Laptop.jpeg.jpeg",
+      "model": "ct31231",
+      "modelName": "ct31231",
+      "modelType": "toshiba",
+      "cost": "4000",
+      "category": "laptop",
+      "description": "Additional Description",
+      "notes": [
+        {
+          "id": 1,
+          "name": "jeniifer Smith",
+          "date": "03-02-2021",
+          "comment": "This item need to be checked"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Printer Inc",
+      "image": "https://cf.shopee.com.my/file/db528bf988d2c6750d5818a84c515f89",
+      "model": "Gt2000",
+      "modelName": "Gt2000",
+      "modelType": "inc black",
+      "cost": "500",
+      "category": "printer inc",
+      "description": "Additional Description",
+      "notes": [
+        {
+          "id": 1,
+          "name": "jeniifer Smith",
+          "date": "03-02-2021",
+          "comment": "This item need to be checked"
+        }
+      ]
+    }
+  ]
+}
