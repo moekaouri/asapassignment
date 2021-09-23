@@ -1,6 +1,7 @@
 import { EDIT_DATA_UPDATE } from "./types";
 import {MODEL_DETIALS_DATA_UPDATE} from '../ModelDetailsView/types';
 import axios from 'axios';
+import {Platform} from 'react-native';
 
 export const changeData = (object) => {
     return async (dispatch) => {
@@ -14,7 +15,7 @@ export const changeData = (object) => {
 export const loadData = (id) => {
     return async (dispatch) => {
         try {
-            const res = await axios.get(`http://localhost:3000/model/${id}/`);
+            const res = await axios.get(Platform.OS === 'ios' ? `http://localhost:3000/model/${id}/` : `http://10.0.2.2:3000/model/${id}`);
             dispatch({
                 type: EDIT_DATA_UPDATE,
                 payload: {
@@ -58,7 +59,7 @@ export const updateData = (id, title, image, model, modelName, modelType, cost, 
                 "notes": notes
             })
 
-            const res = await axios.put(`http://localhost:3000/model/${id}/`, params, {
+            const res = await axios.put(Platform.OS === 'ios' ? `http://localhost:3000/model/${id}/` : `http://10.0.2.2:3000/mode/${id}`, params, {
                 "headers": {
                     "content-type": "application/json"
                 }
