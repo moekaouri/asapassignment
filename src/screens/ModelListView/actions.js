@@ -1,5 +1,6 @@
 import { MODEL_DATA_UPDATE } from "./types";
 import axios from 'axios';
+import { Platform } from "react-native";
 
 export const changeData = (object) => {
     return async (dispatch) => {
@@ -20,7 +21,7 @@ export const loadData = () => {
                 }
             })
 
-            const res = await axios.get('http://localhost:3000/model')
+            const res = await axios.get(Platform.OS === 'ios' ? 'http://localhost:3000/model' : 'http://10.0.2.2:3000/model')
 
             dispatch({
                 type: MODEL_DATA_UPDATE,
@@ -46,7 +47,7 @@ export const searchData = (object) => {
                 }
             })
 
-            const res = await axios.get(`http://localhost:3000/model?q=${object}`)
+            const res = await axios.get(Platform.OS === 'ios' ? `http://localhost:3000/model?q=${object}` : `http://10.0.2.2:3000/model?q=${object}`)
 
             dispatch({
                 type: MODEL_DATA_UPDATE,
